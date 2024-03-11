@@ -1,0 +1,27 @@
+ <%- include('../partials/header.ejs')%>
+    <div class="content">
+        <div class="center-container">
+            <h3>Welcome to Vintage Trading</h3>
+                              
+                <table>
+                        <tr>
+                            <td class="cell-padding"><p><%=trade.offerItemId.category%></p><a id="profilelinks" href="/trades/<%=trade.offerItemId._id%>">
+                            <%=trade.offerItemId.title%></a></td>
+                            <td class="cell-padding"><p><%=trade.category%></p><a id="profilelinks" href="/trades/<%=trade.id%>">
+                            <%=trade.title%></a></td>
+                            <td class="cell-padding">
+                                <form id="formid">
+                                    <div>
+                                    <button type="submit" id="editbutton" id="editbutton" formmethod="POST"
+                                        formaction="/trades/offer/<%=trade.offerItemId.id%>/<%=trade.id%>/accept">Accept</button>
+                                        <button type="submit" id="deletebutton" id="deletebutton" formmethod="POST"
+                                        formaction="/trades/offer/reject/<%=trade.id%>/<%=trade.offerItemId.id%>">Reject</button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                 
+                </table>
+        </div>
+    </div>
+<%- include('../partials/footer.ejs')%>    

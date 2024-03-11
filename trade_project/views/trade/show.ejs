@@ -1,0 +1,37 @@
+<%- include('../partials/header.ejs') %>
+
+<section id="section3"> 
+    <div class="content">
+    <div class="row3">
+        <img src=<%= trade.image %> alt="Vintage Photography" height="50" width="50">
+        <div class="imgtext">
+            <h1 id="titletagtrade"><%= trade.title %></h1>
+            <h4>Hosted by <%= trade.host.firstName +' '+ trade.host.lastName %></h4>
+            <% if(user == trade.host._id) { %>
+            <form id="formid">
+                <div>
+                    <button type="submit" id="editbutton" formmethod="GET" formaction="/trades/<%= trade._id %>/edit">Edit</button>
+                    <button type="submit" id="deletebutton" formmethod="POST" formaction="/trades/<%= trade._id %>?_method=DELETE">Delete</button>
+                </div>
+            </form>
+            <% } else {%>
+                <form id="formid">
+                    <%  if(trade.status==='Available'){%>
+                    <button type="submit" formmethod="GET" id="tradebutton" formaction="/trades/offer/<%=trade._id%>">Trade</button>
+                    <%} 
+                    if(canWatch){%>
+                    <button type="submit" formmethod="POST" id="watchbutton" formaction="/trades/watch/<%=trade._id%>?_method=PUT">Watch</button>
+                    <%} else {%>
+                        <button type="submit" id="watchbutton" formmethod="POST" formaction="/trades/unwatch/<%=trade._id%>?_method=PUT">Unwatch</button>
+                    <%}%>
+                </form>
+            <% } %>
+        </div>
+    </div>
+    
+    <h1>Details</h1>
+    <h2><%= trade.details %></h2>
+   
+</div>
+</section>
+<%- include('../partials/footer.ejs') %>

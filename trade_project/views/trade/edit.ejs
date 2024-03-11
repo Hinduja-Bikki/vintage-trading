@@ -1,0 +1,33 @@
+<%- include('../partials/header.ejs') %>
+<div class="content">
+    <div class="center-container">
+        <form method="POST" action="/trades/<%= trade.id %>?_method=PUT" class="mt-20">
+            <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" placeholder="Category" size="40" value="<%= trade.category %>" required>
+            </div>
+        
+            <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Title" size="40" value="<%= trade.title %>" required>
+            </div>
+        
+            <div class="form-group">
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" placeholder="Description" rows="4" cols="39" required minlength="10"><%= trade.details %></textarea>
+            </div>
+        
+            <div class="form-group">
+            <label for="image">Image URL:</label>
+            <input type="url" id="image" name="image" placeholder="Image URL" size="48" value="<%= trade.image %>" required>
+            </div>
+        
+            <div class="form-group">
+            <button class="submit2" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+  
+
+  <%- include('../partials/footer.ejs') %>

@@ -1,0 +1,502 @@
+body {
+    margin: 0;
+  }
+  
+  .verticalLine {
+    height: 20px;
+    border-left: 2px solid #ADA2FF;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  
+  
+  #Navigation {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ADA2FF;
+    height: 150px;
+  }
+  
+  #BottomNavigation {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ADA2FF;
+    height: 1000px;
+  }
+  
+  img {
+    border: 2;
+    border-style: solid;
+    width: 100px;
+    height: 80px;
+  }
+  
+  .vinjpg {
+    float: left;
+  }
+  
+  .vinjpg a {
+    display: block;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+  }
+  
+  .topnavRight{
+    display: flex;
+    float: right;
+    margin-right: 30px;
+    color: black;
+  }
+  
+  .topnavRight > a{
+    margin-left: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .topnavBottom > a {
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .hr{
+    width: 95%;
+    margin-top: 90px;
+  }
+  
+  .tradesTag{
+    text-decoration: none;
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+  
+  
+  .bottomnavLeft{
+    display: flex;
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .bottomnavRight{
+    display: flex;
+    float: right;
+    margin-right: 30px;
+  }
+  
+  .bottomnavRight > a{
+    margin-left: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  
+  .topnavRight > a:hover, .topnavBottom > a:hover {
+    color: white;
+  }
+    
+  footer {
+    height: 15vh;
+    bottom: 0;
+    margin-top: 20%;
+    position: fixed;
+    background-color:#ADA2FF;;
+    width: 100%;
+    color: black;
+  }
+  
+  #left{
+    float: left;
+    margin-top: 30px;
+    text-decoration: none;
+  
+  }   
+  
+  #left > ul{
+    list-style: none;
+    display: flex;
+   
+  }
+  
+  #left > ul > li{
+   margin-left: 15px;
+  
+  }
+  
+  #left > ul > li > a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+  }
+  
+  #left > ul > li > a:hover, #right > a:hover {
+    color: white;
+  }
+  
+  #right > a > i:hover {
+    color: white;
+  }
+  
+  #right{
+    float: right;
+    margin-right: 50px;
+    margin-top: 45px;
+  }
+  
+  #right > a{
+    margin-right: 15px;
+  }
+  
+  #navid {
+    height: 150px;
+  }
+  
+  #right > a > i {
+    font-size:26px;
+    color: black;
+  }
+  
+  
+  #section1 {
+    position: fixed;
+    width: 100%;
+    margin-left: 50px;
+    overflow: hidden;
+    color: #4b0303;
+    height: 600px;
+    font-style: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  #section1 h1 {
+    font-size: 30px;
+    padding-left: 400px;
+    margin-top: 100px;
+    font-style: oblique;
+  }
+  
+  #section1 #header1 {
+    font-size: 25px;
+    padding-left: 250px;
+  }
+  
+  #section1 #header2 {
+    font-size: 25px;
+    padding-left: 80px;
+  }
+  
+  
+  #section2 {
+    position: fixed;
+    margin-left: 50px;
+    overflow: hidden;
+    color: #4b0303;
+    width: 100%;
+  }
+  
+  form {
+    margin-top: 1%;
+    margin-left: 30%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  #title2 {
+    margin-left: 50px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  #category2 {
+    margin-left: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  #author2 {
+    margin-left: 58px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  #details2 {
+    margin-left: 35px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+
+  #image {
+    margin-left: 8px;
+  }
+  
+  #submit2 {
+    background-color: #4B0303;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin-left: 400px;
+    padding: 7px 7px 7px 7px;
+  }
+  
+  
+  #section3 {
+    position: fixed;
+    margin-left: 50px;
+    overflow: scroll;
+    color: #4b0303;
+    width: 100%;
+    font-family: Calibri;
+    height: 100%;
+  }
+  
+  #section3 img {
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+  
+  #section3 h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  #section3 h2 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 15px;
+    padding-right: 100px;
+    padding-left: 25px;
+  }
+  
+  .row3 {
+    display: flex;
+  }
+  
+  .imgtext {
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #formid {
+    margin-left: 0%;
+  }
+  
+  
+  #section4 {
+    position: fixed;
+    width: 100%;
+    margin-left: 50px;
+    overflow: auto;
+    margin-top: 25px;
+    color: #4B0303;
+    text-decoration: none;
+  }
+  
+  #categories h4 {
+    font-style: oblique;
+  }
+  
+  h5 > a{
+    text-decoration: none;
+  }
+
+  #sectionindex {
+    margin-left: 40px;
+    margin-bottom: 25%;
+  }
+
+  #editbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 60px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 7px 7px 7px 7px;
+
+  }
+
+
+  #watchbutton {
+    background-color: rgba(255, 102, 51, 0.6);
+    border: none;
+    color: white;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 60px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 7px 7px 7px 7px;
+
+  }
+
+  #tradebutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 60px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 7px 7px 7px 7px;
+
+  }
+
+  #offerbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 10px;
+    margin: 4px 2px;
+    margin-left: 300px;
+    cursor: pointer;
+    width: 60px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 7px 7px 7px 7px;
+  }
+
+  #deletebutton {
+    background-color: rgba(255, 102, 51, 0.6);
+    border: none;
+    color: white;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 60px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .submit2 {
+    background-color: #4b0303;
+    border: none;
+    color: white;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 7px 7px 7px 7px;
+    margin-left: 500px;
+  }
+
+  #titletagtrade {
+    margin-bottom: 4px;
+  }
+
+  .center-container{
+    width: 80%;
+    background-color:#f6f6f6;
+    padding: 8px 12px;
+    margin: 20px auto;
+  }
+
+  .mt-20{
+    margin-top: 20px;
+  }
+
+  form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  label {
+    flex: 0.5;
+    margin-right: 10px;
+  }
+
+  .form-group label {
+    flex-basis: 20%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    flex-basis: 70%;
+  }
+
+  .tableheader {
+    width: 95%;
+    background-color:#ffffff;
+    padding: 5px 15px;
+    border-left: 4px solid #4CAF50;
+    margin: 20px auto;
+  }
+
+  table {
+    margin: 20px;
+  }
+
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 50px;
+  }
+  
+  table th, table td {
+    border: 0.3px solid black;
+  }
+
+ 
+
+  #formid div {
+    display: flex;
+  }
+  
+  #formid button {
+    margin-right: 10px;
+  }
+
+.success {
+  margin: 18px auto;
+  background: rgba(108, 192, 112, 0.6);
+  color: #fff;
+  width: 80%;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.error {
+  margin: 18px auto;
+  background: rgba(255, 102, 51, 0.6);
+  color: #fff;
+  width: 80%;
+  padding: 10px 10px;
+  text-align: center;
+}
+.welcometag{
+  color: black ;
+  float: right;
+}
+
+.cell-padding {
+  padding: 10px;
+}
+.content{
+  margin-bottom: 25%;
+}

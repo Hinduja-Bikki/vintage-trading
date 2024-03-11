@@ -1,0 +1,38 @@
+use vintage
+
+db.trades.drop()
+
+db.createCollection("trades");
+
+show collections
+
+
+db.trades.insertOne ({"category": "Art and collectibles trading",  "title":"Vintage Paintings",  "author":"Claude Monet, and Leonardo da Vinci",  "details": "Vintage sculptures refer to three-dimensional works of art created in the past, typically more than 50 years ago, using materials such as stone, metal, wood, or clay. They can be found in museums, galleries, and private collections, and may represent various artistic styles and movements, including classical, medieval, and modern. Vintage sculptures may be valued for their age, rarity, and artistic merit, and often reflect the cultural and social values of the time period in which they were created. Some of the most famous vintage sculptures include works by renowned artists such as Michelangelo, Auguste Rodin, and Constantin Brancusi.",  "image": "https://images.unsplash.com/photo-1579541513287-3f17a5d8d62c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmludGFnZSUyMGFydHxlbnwwfHwwfHw%3D&w=1000&q=80"});
+
+
+
+db.trades.insertOne ({"category": "Art and collectibles trading",  "title":"Vintage Sculptures",  "author":"Auguste Rodin, and Constantin Brancusi",  "details": "Vintage sculptures refer to three-dimensional works of art created in the past, typically more than 50 years ago, using materials such as stone, metal, wood, or clay. They can be found in museums, galleries, and private collections, and may represent various artistic styles and movements, including classical, medieval, and modern. Vintage sculptures may be valued for their age, rarity, and artistic merit, and often reflect the cultural and social values of the time period in which they were created. Some of the most famous vintage sculptures include works by renowned artists such as Michelangelo, Auguste Rodin, and Constantin Brancusi.",  "image": "https://i.pinimg.com/736x/95/4b/b8/954bb867a81ca47b75bc7ac23298b7df.jpg"});
+
+
+
+db.trades.insertOne ({"category": "Art and collectibles trading",  "title":"Vintage Photography",  "author":"Auguste Rodin, and Constantin Brancusi",  "details": "Vintage photography refers to photographs that were taken in the past, typically more than 50 years ago, using traditional photographic processes such as daguerreotype, tintype, or silver gelatin. These photographs may be considered valuable due to their age, rarity, and historical significance. Vintage photography can include a variety of subjects, such as portraits, landscapes, and street scenes, and can be found in museums, galleries, and private collections. They often reflect the social and cultural values of the time period in which they were taken, and can provide insights into historical events and people. Some of the most famous vintage photographers include Ansel Adams, Henri Cartier-Bresson, and Edward Steichen.",  "image": "https://images.pexels.com/photos/247929/pexels-photo-247929.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"});
+
+
+
+
+
+
+db.trades.insertOne ({"category": "Fashion and Clothing",  "title":"Vintage Wedding Dresses",  "author":"Henri Cartier-Bresson, and Edward Steichens",  "details": "Vintage wedding dresses refer to wedding dresses that were created in the past, typically more than 20 years ago, and have a certain historical or sentimental value. These dresses may be considered valuable due to their age, rarity, and unique design elements. Vintage wedding dresses can come from different eras and styles, such as Victorian, Edwardian, Art Deco, and 1950s. They often feature intricate details, such as lace, embroidery, and beading, and may be made from high-quality materials such as silk and satin. Vintage wedding dresses can be found in specialty vintage shops, online marketplaces, and even in family collections. They offer a unique opportunity for brides to wear a one-of-a-kind gown that has a rich history and represents a bygone era",  "image": "https://i0.wp.com/www.weddingforward.com/wp-content/uploads/2021/02/vintage-inspired-wedding-dresses-a-line-sweetheart-rebekah-westover-photography.jpg?fit=1080%2C1350&ssl=1"});
+
+
+
+
+db.trades.insertOne ({"category": "Fashion and Clothing",  "title":"Vintage Footwear",  "author":"Bygone",  "details": "Vintage footwear refers to shoes that were created in the past, typically more than 20 years ago, and are considered to have historical or fashion significance. Vintage footwear can include a wide range of styles and designs, such as boots, pumps, flats, and sandals, and may come from different time periods and fashion movements, such as the 1920s, 1950s, and 1980s. They may be made from high-quality materials, such as leather and suede, and feature unique design elements, such as intricate detailing and bold colors. Vintage footwear can be found in specialty vintage shops, online marketplaces, and even in family collections. They offer a unique opportunity for fashion enthusiasts to wear a piece of history and add a touch of vintage charm to their wardrobe.",  "image": "https://thegraphicsfairy.com/wp-content/uploads/2020/07/shoe-vintage-image-GraphicsFairy.jpg"});
+
+
+db.trades.insertOne ({"category": "Fashion and Clothing",  "title":"Vintage Handbags and Accessories",  "author":"Fashion enthusiasts",  "details": "Vintage footwear refers to shoes that were created in the past, typically more than 20 years ago, and are considered to have historical or fashion significance. Vintage footwear can include a wide range of styles and designs, such as boots, pumps, flats, and sandals, and may come from different time periods and fashion movements, such as the 1920s, 1950s, and 1980s. They may be made from high-quality materials, such as leather and suede, and feature unique design elements, such as intricate detailing and bold colors. Vintage footwear can be found in specialty vintage shops, online marketplaces, and even in family collections. They offer a unique opportunity for fashion enthusiasts to wear a piece of history and add a touch of vintage charm to their wardrobe.",  "image": "https://cdn.shopify.com/s/files/1/0248/6799/products/Gucci_Jackie_O_Bag_7_1024x1024@2x.jpg?v=1441098741"});
+
+
+db.trades.find().pretty()
+
+

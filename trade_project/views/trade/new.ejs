@@ -1,0 +1,35 @@
+<%- include('../partials/header.ejs') %>
+<div id="section"> 
+    <div class="center-container">
+        <form action = '/trades' method = 'POST' class="mt-20">
+            <div class="form-group">
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" placeholder="category" size="40"><br><br>
+            </div>
+
+            <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="title" size="40"><br><br>
+            </div>
+
+            <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" placeholder="author" size="40"><br><br>
+            </div>
+
+            <div class="form-group">
+            <label for="details">Details</label>
+            <textarea id="details" name="details" placeholder="description" rows="4" cols="39"></textarea><br><br>
+            </div>
+
+            <div class="form-group">
+            <label for="image">Image URL</label>
+            <input type="url" id="image" name="image" size="48" placeholder="Image URL..">
+            </div>
+
+            <input type="submit" id="submit2" value="Create Trade">
+            
+        </form>
+    </div>
+ </div>
+<%- include('../partials/footer.ejs') %>

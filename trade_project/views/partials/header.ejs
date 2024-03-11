@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My web application</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <nav id="navid">
+                <div id ="Navigation">
+                    <div class="vinjpg"><a href="/"><img src="/images/vintage.jpeg" alt="vintage trading"></a></div>
+                
+                    <div class="topnavRight">
+                            <% if(!user){ %>
+                                <a href="/trades/new">Start Trading! &nbsp; ➤➤ &nbsp; &nbsp;</a>
+                                <a href="/users/login">Login</a>
+                                <div class="verticalLine"></div>
+                                <a href="/users/new">Signup</a>                                
+                            <% } else { %>
+                                <a href="/trades/new">Start Trading! &nbsp; ➤➤ &nbsp; &nbsp;</a>
+                                <a href='/users/profile'>Profile</a>
+                                <div class="verticalLine"></div>
+                                <a href='/users/logout'>Logout</a>
+                                <div class="verticalLine"></div>
+                                <a href="/users/new">Sign up</a>
+                            <% } %>
+                    </div>
+
+
+                    <div class="topnavBottom">
+                        <hr class="hr">
+                        <a class="tradesTag" href="/trades">Trades</a>
+                    </div>
+                </div>   
+            </nav>
+        </header>
+
+        <% if(errorMessages.length > 0) {%>
+            <% errorMessages.forEach(message=>{%>
+                <div class='error'>
+                    <%=message%>
+                </div>
+            <%});%>
+        <%}%>
+        
+        <% if(successMessages.length > 0) {%>
+            <% successMessages.forEach(message=>{%>
+                <div class='success'>
+                    <%=message%>
+                </div>
+            <%});%>
+        <%}%>

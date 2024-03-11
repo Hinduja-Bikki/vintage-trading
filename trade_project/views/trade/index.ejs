@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs') %>
+    <section id="sectionindex"> 
+        <div id="categories">
+            <% if(categories.length){ %>
+                <% categories.forEach(category => { %>
+
+                    <h4><%= category %></h4>
+                        <% if (trades.length) { %>
+                            <% trades.forEach(trade => { 
+                                if (category == trade.category) { %>
+                                   <h5><a href="/trades/<%= trade.id %>"><%= trade.title %></a></h5>
+                                <% } });
+                            } else { %>
+                                <h5>There are no trades to display.</h5>
+                        <% } %>
+                <% }); %>
+            <% } else { %>
+                <h5>There are no categories to display.</h5>
+            <% } %>
+        <br>
+        </div>
+    </section>
+<%- include('../partials/footer.ejs') %>

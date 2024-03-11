@@ -1,0 +1,37 @@
+<%- include('../partials/header.ejs')%>
+    <div class="content">
+        <div class="center-container">
+            <div class="tableheader">
+                    <h3><%=user.firstName%>'s Trades</h3>
+            </div>
+            <% if(vintageitems.length){ %>
+                 <form action="/trades/offer/<%=id%>" id="formid" method="POST">
+                    
+                        <table>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>vintageitem</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                            </tr>
+                            <% vintageitems.forEach(vintageitem => { %>
+                                <tr>
+                                    <td class="cell-padding"> <input type="radio" name="tradeItem" value="<%=vintageitem._id%>"></td>
+                                    <td class="cell-padding"><a id="profilelinks" href='/trades/<%=vintageitem._id%>'>
+                                        <%= vintageitem.title %></a></td>
+                                    <td class="cell-padding"><%= vintageitem.category %></td>
+                                    <td class="cell-padding"><%= vintageitem.status %></td>
+                    
+                                </tr>
+                            <% }); %>
+                        </table>
+                   
+                        <button type="submit" id="offerbutton">Trade</button>
+                </form>
+            <% } else { %>
+                     <p id="divptrade">There are no trades to display.</p>
+            <% } %>
+        </div>
+    </div>
+<%- include('../partials/footer.ejs')%>    
+      
